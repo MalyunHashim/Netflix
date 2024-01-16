@@ -165,7 +165,10 @@ label::after{
     content: '+';
     font-size: 34px;
     position: absolute;
-    right:20px
+    right:20px;
+    transition: transform 0.5s;
+   
+    
 }
 
 input[type="radio"]{
@@ -181,12 +184,28 @@ input[type="radio"]{
     transition: max-height 0.5s, padding 0.5s;
 }
 
-.accordion input[type="radio"]:checked + label +.content{
+.accordion input[type="radio"]:checked + label + .content{
     max-height: 600px;
     padding: 30px 20px;
 }
-.accordion input[type="radio"]:checked + label ::after{
+.accordion input[type="radio"]:checked + label::after{
     transform: rotate(135deg);
+}
+
+.faq .email-signup{
+    max-width: 600px;
+    margin:20px auto 60px;
+
+}
+.faq small{
+    font-size: 13px;
+}
+/*------------footer----------*/
+
+.footer{
+   padding: 50px 15% 10px;
+   border-top: 6px solid #333;
+   color:#777; 
 }
 
 
